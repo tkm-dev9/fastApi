@@ -1,0 +1,13 @@
+version: "3.0"
+
+services:
+  api:
+    container_name: "api"
+    build:
+      context: ./api
+    volumes:
+      - type: bind
+        source: ./api
+        target: /api
+    ports:
+      - "8080:8080"
