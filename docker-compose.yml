@@ -11,3 +11,15 @@ services:
         target: /api
     ports:
       - "8080:8080"
+  frontend:
+    container_name: "frontend"
+    build:
+      context: ./frontend
+    volumes:
+      - type: bind
+        source: ./frontend
+        target: /frontend
+    ports:
+      - "3000:3000"
+    working_dir: /frontend
+    command: ["npm", "run", "dev"]

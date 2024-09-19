@@ -1,10 +1,10 @@
 {
-  "name": "testenv",
+  "name": "frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "API_URL=http://localhost:8080/ vite",
     "build": "vite build",
     "serve": "vite preview"
   },
