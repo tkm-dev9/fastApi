@@ -16,6 +16,6 @@
     "noImplicitOverride": true,
     "paths": {
       "@/*": ["src/*"]
-    },
+    }
   }
 }
