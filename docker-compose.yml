@@ -1,6 +1,14 @@
 version: "3.0"
 
 services:
+  selenium:
+    container_name: selenium
+    image: seleniarm/standalone-chromium:latest
+    ports:
+      - "4444:4444"
+      - "5900:5900"
+      - "7900:7900"
+    shm_size: "2gb"
   api:
     container_name: "api"
     build:
@@ -11,6 +19,8 @@ services:
         target: /api
     ports:
       - "8080:8080"
+    depends_on:
+      - selenium
   frontend:
     container_name: "frontend"
     build:
@@ -22,4 +32,4 @@ services:
     ports:
       - "3000:3000"
     working_dir: /frontend
-    command: ["npm", "run", "dev"]
+    command: [ "npm", "run", "dev" ]

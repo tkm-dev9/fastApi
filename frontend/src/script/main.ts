@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const res = await fetch(apiUrl);
       if (!res.ok) throw new Error(`エラーが発生しました。: ${res.status}`);
       const data = await res.json();
-      output.textContent = data.res;
+      if (data.res.title) {
+        output.textContent = data.res.title;
+      }
     } catch (error) {
       console.error(error);
     }
