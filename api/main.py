@@ -21,17 +21,13 @@ def scrape_data():
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
 
-    print("driver前")
-
     driver = webdriver.Remote(
         command_executor="http://selenium:4444/wd/hub",
         options=webdriver.ChromeOptions()
     )
-    print("driver後")
     driver.implicitly_wait(10)
     driver.get("https://linksmate.jp/")
     title = driver.find_element(By.TAG_NAME, "h1").text
-    print("quit前")
     driver.quit()
     return {"title": title}
 
