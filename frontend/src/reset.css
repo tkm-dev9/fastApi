@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+a {
+  color: #09ee;
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #333;
+  outline: none;
+}

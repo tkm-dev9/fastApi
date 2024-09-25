@@ -14,9 +14,7 @@ services:
     build:
       context: ./api
     volumes:
-      - type: bind
-        source: ./api
-        target: /api
+      - ./api:/api
     ports:
       - "8080:8080"
     depends_on:
@@ -26,9 +24,7 @@ services:
     build:
       context: ./frontend
     volumes:
-      - type: bind
-        source: ./frontend
-        target: /frontend
+      - ./frontend:/frontend
     ports:
       - "3000:3000"
     working_dir: /frontend
