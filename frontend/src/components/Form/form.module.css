@@ -1,0 +1,45 @@
+.form {
+  width: 80%;
+  margin-block: 30px;
+  margin-inline: auto;
+  border: 1px solid #ccc;
+}
+
+.inner {
+  padding: 20px 0 20px 50px;
+}
+
+.item {
+  margin: 20px 0;
+}
+
+.labelTxt {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.input {
+  width: 25%;
+  padding: 10px;
+}
+
+.textarea {
+  width: 70%;
+  padding: 10px;
+}
+
+.btnWrapper {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  padding: 20px;
+  background: #333;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.item::before {
+  content: "|";
+  display: block;
+  color: #fff;
+}
+
+.item::after {
+  content: "|";
+  display: block;
+  color: #fff;
+}
+
+.link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
