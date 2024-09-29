@@ -29,6 +29,20 @@
   padding: 10px;
 }
 
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
 .btnWrapper {
   text-align: center;
 }
