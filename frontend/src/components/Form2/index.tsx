@@ -17,8 +17,6 @@ function Form2() {
     alert("送信しました");
   };
 
-  console.warn(errors);
-
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div>
